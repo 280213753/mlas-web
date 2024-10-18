@@ -12,7 +12,7 @@ function App() {
       setError(null);
 
       // 假设你的服务端 API 地址是 http://localhost:3000/api/data
-      const response = await axios.get("http://localhost/users?username=1");
+      const response = await axios.get("http://dev-mlas-server:8080/users?username=1");
 
       // 设置获取到的数据
       setData(response.data);
